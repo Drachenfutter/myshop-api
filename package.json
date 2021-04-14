@@ -1,0 +1,44 @@
+{
+  "name": "ecommerce-api",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npm run build && node dist/index.js",
+    "dev": "ts-node-dev --respawn --inspect=0.0.0.0:7001 src/index.ts",
+    "build": "tsc",
+    "run-postgres": "docker rm --force pg > /dev/null 2>&1; docker run --name pg -e POSTGRES_PASSWORD=superPassword -p 5432:5432 -d postgres",
+    "local-with-postgres": "npm run run-postgres && npm run build && node dist/index.js",
+    "test": "jest --no-cache"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "fastq": "^1.11.0",
+    "jsonwebtoken": "^8.5.1",
+    "nanoid": "^3.1.22",
+    "nodemailer": "^6.5.0",
+    "pg": "^8.5.1",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.32",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^3.0.1",
+    "@types/body-parser": "^1.19.0",
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.11",
+    "@types/jest": "^26.0.22",
+    "@types/jsonwebtoken": "^8.5.1",
+    "@types/multer": "^1.4.5",
+    "@types/nodemailer": "^6.4.1",
+    "@types/winston": "^2.4.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jest": "^26.6.3",
+    "multer": "^1.4.2",
+    "ts-jest": "^26.5.4",
+    "ts-node": "^9.1.1",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.2.4"
+  }
+}
