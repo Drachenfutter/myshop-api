@@ -5,105 +5,105 @@ export const ERRORS ={
     NAME_NOT_INFORMED:{
       statusCode: 400,
       errorCode: 100,
-      message: 'Nome de usuário não informado'
+      message: 'Name not informed.'
     },
     EMAIL_NOT_INFORMED:{
       statusCode: 400,
       errorCode: 101,
-      message: 'Email não informado.'
+      message: 'Email not informed.'
     },
     EMAIL_INVALID:{
       statusCode: 400,
       errorCode: 102,
-      message: 'Email inválido.'
+      message: 'Invalid email.'
     },
     EMAIL_USED_ALREADY:{
       statusCode: 400,
       errorCode: 103,
-      message: 'Email inválido.'
+      message: 'Invalid email.'
     },
     PASSWORD_NOT_INFORMED:{
       statusCode: 400,
       errorCode: 104,
-      message: 'Informe uma senha para acesso'
+      message: 'Enter a password for access'
     },
   },
   LOGIN: {
     LOGIN_NOT_INFORMED:{
       statusCode: 400,
       errorCode: 201,
-      message: 'Login não informado. Verifique os parâmetros e tente novamente' 
+      message: 'Login not informed. Check the parameters and try again' 
     },
     PASSWORD_NOT_INFORMED:{
       statusCode: 400,
       errorCode: 202,
-      message: 'Senha não informada. Verifique os parâmetros e tente novamente' 
+      message: 'Password not informed. Check the parameters and try again' 
     },
     USER_NOT_FOUND:{
       statusCode: 400,
       errorCode: 203,
-      message: 'Credenciais inválidas. Verifique os parâmetros e tente novamente' 
+      message: 'Invalid credentials. Check the parameters and try again' 
     },
     PASSWORD_INVALID:{
       statusCode: 400,
       errorCode: 204,
-      message: 'Credenciais inválidas. Verifique os parâmetros e tente novamente' 
+      message: 'Invalid credentials. Check the parameters and try again' 
     }
   },
   NEW_STORE:{
     NAME_NOT_INFORMED:{
       statusCode: 400,
       errorCode: 301,
-      message: 'Nome da loja não informado'
+      message: 'Store name not entered'
     },
     URL_NOT_INFORMED:{
       statusCode: 400,
       errorCode: 302,
-      message: 'Identificador da loja não informado'
+      message: 'Store identifier not informed'
     },
     USER_NOT_INFORMED:{
       statusCode: 400,
       errorCode: 303,
-      message: 'Falha ao recuperar usuário responsável pela loja'
+      message: 'Failed to retrieve user responsible for the store'
     },
   },
   PRODUCT:{
     NO_NAME:{
       statusCode: 400,
       errorCode: 401,
-      message: 'Nome do produto não informado.' 
+      message: 'Product name not informed.' 
     },
     NO_PRICE:{
       statusCode: 400,
       errorCode: 402,
-      message: 'Valor do produto não informado.' 
+      message: 'Product value not informed' 
     },
     NO_STORE_ID:{
       statusCode: 400,
       errorCode: 403,
-      message: 'Loja não informada.' 
+      message: 'Store not informed.' 
     },
     STORE_ID_NOT_ALLOWED:{
       statusCode: 400,
       errorCode: 404,
-      message: 'Ação não permitida para este usuário.' 
+      message: 'Action not allowed for this user.' 
     },
   },
   AUTH:{
     INVALID_ACCESS_TOKEN:{
       statusCode: 400,
       errorCode: 10,
-      message: 'A requisição não pode ser processada. Autenticação expirada ou inválida.' 
+      message: 'The request cannot be processed. Authentication expired or invalid.' 
     },
     NO_ACCESS_TOKEN:{
       statusCode: 400,
       errorCode: 11,
-      message: 'A requisição não pode ser processada. Verifique os parâmetros e tente novamente.' 
+      message: 'The request cannot be processed. Check the parameters and try again.' 
     },
     VERIFYING_JWT:{
       statusCode: 500,
       errorCode: 10,
-      message: 'Houve um erro interno na aplicação. Tente mais tarde.' 
+      message: 'There was an internal error in the application. Try later.' 
     },
     EMAIL_VALIDED:{
       statusCode: 400,
@@ -125,7 +125,7 @@ export const ERRORS ={
     BCRIPTY:{
       statusCode: 500,
       errorCode: 100,
-      message: 'Erro interno ao validar credenciais' 
+      message: 'Internal error when validating credentials' 
     }
   }
 }
