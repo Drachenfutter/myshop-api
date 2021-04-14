@@ -1,7 +1,7 @@
 # MyShop - API
 Application NodeJs provider of basic features for the project [MyShop Web](https://github.com/Drachenfutter/myshop-web).
 ## Running the project
-### Iniciando Postgres via Docker
+### Running Postgres via Docker
 ```cmd
 npm run run-postgres
 ```
